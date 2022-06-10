@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2021",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}

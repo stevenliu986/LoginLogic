@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #2c3e50;
+  --second-color: #141c24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#app {
+  /* font-family: monospace; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login,
+.register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-info,
+.register-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username,
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1em;
+  text-shadow: 0.5px 0.5px 1px;
+}
+
+input {
+  font-size: 2rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid;
+  color: var(--primary-color);
+}
+
+input:focus {
+  border-style: dashed;
+  outline: none;
+}
+
+.login-btn,
+.register-btn {
+  font-size: 2rem;
+  height: 7rem;
+  border: 2px solid;
+  padding: 0 3rem;
+  border-radius: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px;
+}
+
+.register-btn {
+  height: 11rem;
+}
+
+.login-btn:active,
+.register-btn:active {
+  box-shadow: inset 0px 0px 3px;
+}
+
+.to-login,
+.to-register {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.to-login-btn,
+.to-register-btn {
+  display: inline-block;
+  font-style: normal;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  text-shadow: 0.2px 0.2px 0.2px;
+  user-select: none;
+  transform-origin: right bottom;
+
+}
+
+.to-login-btn:active,
+.to-register-btn:active {
+  transform: perspective(5000px) rotateX(30deg) rotateY(-17.8deg) rotateZ(10deg);
+}
+
+.register {
+  display: none;
+  opacity: 0;
+  /* transform: translateX(-40px); */
+}
