@@ -4,8 +4,8 @@ import axios from 'axios'
 
 ToSomewhere.init()
 
-const loginBtn = document.querySelector('.login-btn span')
-const registerBtn = document.querySelector('.register-btn span')
+const loginBtn = document.querySelector('.login-btn')
+const registerBtn = document.querySelector('.register-btn')
 
 loginBtn.addEventListener('click', login)
 registerBtn.addEventListener('click', register)
