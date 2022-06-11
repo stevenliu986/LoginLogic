@@ -1,8 +1,9 @@
-function register(req, res, next) {
+import axios from "axios";
+import "dotenv/config";
+import bcrypt from "bcrypt";
+
+const register = (req, res) => {
   console.log(req.body);
-  res.status(200).send({ 'info': "OK" })
+};
 
-  // console.log(res);
-}
-
-export { register }
+export { register };
