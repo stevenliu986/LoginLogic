@@ -27,6 +27,8 @@ class InOutAnimation {
 const loginAnimation = new InOutAnimation('.login')
 const RegisterAnimation = new InOutAnimation('.register')
 
+const WelcomeAnimation = new InOutAnimation('.welcome')
+
 function showLogin() {
   console.log('showLogin');
   const tween = gsap.timeline({ delay: 0.1 })
@@ -41,4 +43,11 @@ function showRegister() {
   RegisterAnimation.comeIn(tween)
 }
 
-export { InOutAnimation, loginAnimation, RegisterAnimation, showLogin, showRegister }
+function showWelcome() {
+  console.log('showWelcome');
+  const tween = gsap.timeline({ delay: 0.5 })
+  loginAnimation.comeOut(tween)
+  WelcomeAnimation.comeIn(tween)
+}
+
+export { InOutAnimation, loginAnimation, RegisterAnimation, showLogin, showRegister, showWelcome }

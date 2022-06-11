@@ -142,3 +142,12 @@ input:focus {
   opacity: 0;
   /* transform: translateX(-40px); */
 }
+
+input.error {
+  border-color: red;
+}
+
+.welcome {
+  display: none;
+  font-size: 6rem;
+}
